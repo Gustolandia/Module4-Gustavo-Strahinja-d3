@@ -2,10 +2,6 @@ import React , {Component} from 'react';
 import {Badge} from 'react-bootstrap';
 
 class MyBadge extends Component {
-    
-    constructor(props) {
-        super(props);
-    }
       
     render(){
         return(
