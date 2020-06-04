@@ -38,7 +38,7 @@ class BookList extends Component {
             />
             <Row className="row row-cols-3">
                 {
-                filteredBooks.map( (es) => {
+                this.state.books.map( (es) => {
                     return(
                         <Col key={es.asin} className="mb-3">
                             <SingleBook book={es}/>
