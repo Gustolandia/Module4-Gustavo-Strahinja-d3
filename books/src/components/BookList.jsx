@@ -2,7 +2,6 @@ import React , {Component} from 'react';
 import {Row, Col, FormControl} from 'react-bootstrap';
 import SingleBook from './SingleBook';
 let books = require("./data/fantasy.json");
-let filteredBooks= require("./data/fantasy.json");
 
 
 
@@ -18,7 +17,7 @@ class BookList extends Component {
     handleSearchQuery = (searchQuery) => {
 
         if (searchQuery) {
-            filteredBooks = books.filter((book) =>
+          let filteredBooks = books.filter((book) =>
             book.title.toLowerCase().includes(searchQuery.toLowerCase())
           );
           this.setState({ books: filteredBooks.slice(0, 12) });
